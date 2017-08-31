@@ -28,5 +28,29 @@
         </div>
     </div>
 
+
+    <table th:fragment="table" class="job-listing">
+        <!--Specify the job object here-->
+        <tr>
+            <td>Title</td>
+            <td th:text="${result.name}"></td>
+        </tr>
+        <tr>
+            <td>Location</td>
+            <td th:text="${result.location}"></td>
+        </tr>
+        <tr>
+            <td>Employer</td>
+            <td th:text="${result.employer}"></td>
+        </tr>
+        <tr>
+            <td>Position Type</td>
+            <td th:text="${result.positionType}"></td> <!--make sure it matches the var name!-->
+        </tr>
+        <tr>
+            <td>Core Competency</td>
+            <td th:text="${result.coreCompetency}"></td>
+        </tr>
+    </table>
 </body>
 </html>
