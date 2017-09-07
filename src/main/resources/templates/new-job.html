@@ -20,7 +20,7 @@
             <label th:for="employerId">Employer</label>
             <select th:field="*{employerId}">
                 <option th:each="employer : *{employers}"
-                        th:value="${employer.name}"
+                        th:value="${employer.id}"
                         th:text="${employer.value}"></option>
             </select>
         </div>

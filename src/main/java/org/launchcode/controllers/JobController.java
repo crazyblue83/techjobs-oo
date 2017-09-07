@@ -52,7 +52,7 @@ public class JobController {
              Job someJob = new Job();
              someJob.setName(jobForm.getName());
              someJob.setCoreCompetency(jobForm.getCoreCompetency());
-             someJob.setEmployer(someJob.getEmployer());
+             someJob.setEmployer(jobData.getEmployers().findById(jobForm.getEmployerId())); //Not getting employer name
              someJob.setLocation(jobForm.getLocation());
              someJob.setPositionType(jobForm.getPositionType());
              jobData.add(someJob);
